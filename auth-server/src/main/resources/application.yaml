@@ -1,0 +1,17 @@
+server:
+  port: 8090
+
+spring:
+  security:
+    oauth2:
+      authorizationserver:
+        client:
+          simple:
+            registration:
+              client-id: simple-client
+              client-secret: "{noop}secret"
+              scopes: read
+              client-authentication-methods:
+                - client_secret_basic
+              authorization-grant-types:
+                - client_credentials

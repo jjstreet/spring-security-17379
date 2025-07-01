@@ -1,0 +1,4 @@
+rootProject.name = 'spring-security-17379'
+
+include 'auth-server'
+include 'resource-server'

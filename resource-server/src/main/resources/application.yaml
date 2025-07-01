@@ -1,0 +1,14 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          simple:
+            provider: local
+            client-id: simple-client
+            client-secret: secret
+            scope: read
+            authorization-grant-type: client_credentials
+        provider:
+          local:
+            token-uri: http://localhost:8090/oauth2/token
